@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Hospital Management System</h1>
+    </header>
+    <main>
+        <section id="patient-management">
+            <h2>Patient Management</h2>
+            <button onclick="showAddPatientForm()">Admit New Patient</button>
+            <div id="add-patient-form" style="display: none;">
+                <label for="patient-name">Patient Name:</label>
+                <input type="text" id="patient-name" required>
+                <label for="patient-condition">Condition:</label>
+                <input type="text" id="patient-condition" required>
+                <button onclick="admitPatient()">Admit</button>
+            </div>
+            <div id="patient-list"></div>
+        </section>
+        <section id="doctor-management">
+            <h2>Doctor Management</h2>
+            <button onclick="showAddDoctorForm()">Add New Doctor</button>
+            <div id="add-doctor-form" style="display: none;">
+                <label for="doctor-name">Doctor Name:</label>
+                <input type="text" id="doctor-name" required>
+                <label for="doctor-specialty">Specialty:</label>
+                <input type="text" id="doctor-specialty" required>
+                <button onclick="addDoctor()">Add Doctor</button>
+            </div>
+            <div id="doctor-list"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Hospital Management System</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
